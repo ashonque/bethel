@@ -26,7 +26,7 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        "text-sm font-medium transition-colors hover:text-primary",
+        "text-lg font-medium transition-colors hover:text-primary",
         (pathname === href || (href.startsWith('/#') && pathname === '/')) ? "text-primary" : "text-muted-foreground"
       )}
       onClick={() => setIsMenuOpen(false)}
