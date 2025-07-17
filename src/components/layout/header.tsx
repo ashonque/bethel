@@ -15,8 +15,9 @@ const navLinks = [
   { href: '/gallery', label: 'Gallery' },
   { href: '/events', label: 'Events' },
   { href: '/news', label: 'News' },
-  { href: '/#contact', label: 'Contact' },
 ];
+
+const contactLink = { href: '/#contact', label: 'Contact' };
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,12 +43,17 @@ export function Header() {
           <span className="font-headline text-lg">Bethel Youth United</span>
         </Link>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4">
             <nav className="hidden items-center gap-6 md:flex">
               {navLinks.map((link) => (
                 <NavLink key={link.label} {...link} />
               ))}
             </nav>
+            <div className="hidden md:flex">
+                 <Button asChild>
+                    <Link href={contactLink.href}>{contactLink.label}</Link>
+                </Button>
+            </div>
 
             <div className="md:hidden">
               <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -69,6 +75,11 @@ export function Header() {
                         <NavLink key={link.href} {...link} />
                       ))}
                     </nav>
+                    <div className="mt-auto pt-6">
+                         <Button asChild className="w-full">
+                            <Link href={contactLink.href} onClick={() => setIsMenuOpen(false)}>{contactLink.label}</Link>
+                        </Button>
+                    </div>
                   </div>
                 </SheetContent>
               </Sheet>
