@@ -20,7 +20,7 @@ export default function Home() {
                 John 3:16
               </p>
               <div className="mt-8 flex gap-4">
-                <Button size="lg">Learn More</Button>
+                <Button size="lg" className="animate-pulse">Learn More</Button>
               </div>
             </div>
             <div className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full border-8 border-secondary">
