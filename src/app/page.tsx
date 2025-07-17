@@ -44,7 +44,7 @@ export default function Home() {
                   src="/bible.jpg"
                   alt="Open Bible"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                   data-ai-hint="bible open"
                 />
             </div>
