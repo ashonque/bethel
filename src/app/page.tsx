@@ -80,11 +80,11 @@ export default function Home() {
             </div>
             <div className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full">
                <Image 
-                src="https://placehold.co/400x400.png" 
+                src="/earth.png" 
                 alt="Map to Bethel Youth United"
                 fill
                 className="object-cover"
-                data-ai-hint="map church"
+                data-ai-hint="earth globe"
               />
             </div>
           </div>
