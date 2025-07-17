@@ -23,7 +23,7 @@ export default function Home() {
                 <Button size="lg" className="animate-pulse">Learn More</Button>
               </div>
             </div>
-            <div className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full border-8 border-secondary">
+            <div className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full">
               <Image 
                 src="/logo.jpg" 
                 alt="logo"
