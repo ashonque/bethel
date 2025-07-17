@@ -21,6 +21,16 @@ export default function Home() {
                 <Button size="lg" variant="outline">Learn More</Button>
               </div>
             </div>
+            <div className="relative">
+              <Image
+                src="https://placehold.co/600x400.png"
+                alt="Payment Solution"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-2xl"
+                data-ai-hint="fintech payment"
+              />
+            </div>
           </div>
         </div>
       </section>
