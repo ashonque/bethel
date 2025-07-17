@@ -41,11 +41,11 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/600x400.png"
-                  alt="Our Mission"
+                  src="/bible.jpg"
+                  alt="Open Bible"
                   fill
                   className="object-cover"
-                  data-ai-hint="youth group community"
+                  data-ai-hint="bible open"
                 />
             </div>
             <div className="text-left">
