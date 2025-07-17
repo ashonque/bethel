@@ -83,7 +83,7 @@ export default function Home() {
                 src="/earth.png" 
                 alt="Map to Bethel Youth United"
                 fill
-                className="object-cover"
+                className="object-cover animate-revolve"
                 data-ai-hint="earth globe"
               />
             </div>
