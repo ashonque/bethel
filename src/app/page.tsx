@@ -1,19 +1,12 @@
 
-"use client";
-
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Church, MapPin, Send } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 export default function Home() {
-  const [isHovered, setIsHovered] = useState(false);
-  const words = ['love', 'joy', 'peace', 'patience', 'kindness', 'goodness', 'faithfulness', 'gentleness', 'self-control'];
-
   return (
     <div className="flex flex-col">
       <section className="relative overflow-hidden bg-background">
@@ -32,8 +25,6 @@ export default function Home() {
             </div>
             <div 
               className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full transition-transform duration-300 ease-in-out hover:scale-105"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
             >
               <Image 
                 src="/logo.jpg" 
@@ -42,26 +33,6 @@ export default function Home() {
                 className="object-cover"
                 data-ai-hint="logo abstract"
               />
-              {isHovered && (
-                <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/50">
-                   <div className="relative h-full w-full">
-                    {words.map((word, i) => (
-                      <span
-                        key={word}
-                        className="absolute text-white text-lg font-semibold animate-ripple"
-                        style={{ 
-                          animationDelay: `${i * 150}ms`,
-                          top: '50%',
-                          left: '50%',
-                          transform: 'translate(-50%, -50%)',
-                        }}
-                      >
-                        {word}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>
