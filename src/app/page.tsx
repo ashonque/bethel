@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CreditCard } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Home() {
   return (
