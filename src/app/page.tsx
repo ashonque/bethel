@@ -13,7 +13,7 @@ export default function Home() {
                 For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.
               </h1>
               <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                John 3:16
               </p>
               <div className="mt-8 flex gap-4">
                 <Button size="lg" variant="outline">Learn More</Button>
