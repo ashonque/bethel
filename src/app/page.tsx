@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="mission" className="py-20 md:py-32 bg-secondary">
+      <section id="mission" className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
             <Church className="mx-auto h-12 w-12 text-primary" />
@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="location" className="py-20 md:py-32">
+      <section id="location" className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div>
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 md:py-32 bg-secondary">
+      <section id="contact" className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-2xl text-center">
             <Send className="mx-auto h-12 w-12 text-primary" />
