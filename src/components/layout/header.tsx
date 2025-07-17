@@ -10,12 +10,12 @@ import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/mission', label: 'Mission' },
-  { href: '/location', label: 'Location' },
+  { href: '/#mission', label: 'Mission' },
+  { href: '/#location', label: 'Location' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/events', label: 'Events' },
   { href: '/news', label: 'News' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/#contact', label: 'Contact' },
 ];
 
 export function Header() {
@@ -27,7 +27,7 @@ export function Header() {
       href={href}
       className={cn(
         "text-sm font-medium transition-colors hover:text-primary",
-        pathname === href ? "text-primary" : "text-muted-foreground"
+        (pathname === href || (href.startsWith('/#') && pathname === '/')) ? "text-primary" : "text-muted-foreground"
       )}
       onClick={() => setIsMenuOpen(false)}
     >

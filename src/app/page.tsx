@@ -1,6 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Church, MapPin, Send } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -29,6 +33,77 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="mission" className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4 text-center">
+          <Church className="mx-auto h-12 w-12 text-primary" />
+          <h2 className="mt-6 font-headline text-3xl font-bold tracking-tight md:text-4xl">
+            Our Mission
+          </h2>
+          <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground">
+            Our mission is to foster a vibrant, faith-centered community for young people, guiding them to build a strong, personal relationship with God. We aim to create a supportive environment where they can explore their faith, develop leadership skills, and serve others with love and compassion, inspired by the teachings of Jesus Christ.
+          </p>
+        </div>
+      </section>
+
+      <section id="location" className="py-20 md:py-32">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <MapPin className="h-12 w-12 text-primary" />
+              <h2 className="mt-6 font-headline text-3xl font-bold tracking-tight md:text-4xl">
+                Our Location
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Come and join us for our services and events.
+              </p>
+              <div className="mt-6 space-y-2 text-lg">
+                <p className="text-foreground">Bethel Youth United</p>
+                <p className="text-muted-foreground">123 Faith Street</p>
+                <p className="text-muted-foreground">Anytown, USA 12345</p>
+              </div>
+            </div>
+            <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
+               <Image 
+                src="https://placehold.co/600x400.png" 
+                alt="Map to Bethel Youth United"
+                fill
+                className="object-cover"
+                data-ai-hint="map church"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-20 md:py-32 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-2xl text-center">
+            <Send className="mx-auto h-12 w-12 text-primary" />
+            <h2 className="mt-6 font-headline text-3xl font-bold tracking-tight md:text-4xl">
+              Contact Us
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Have questions or want to get involved? Send us a message!
+            </p>
+          </div>
+          <Card className="mx-auto mt-12 max-w-xl">
+            <CardContent className="pt-6">
+              <form className="space-y-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <Input placeholder="Your Name" />
+                  <Input type="email" placeholder="Your Email" />
+                </div>
+                <Textarea placeholder="Your Message" rows={5} />
+                <Button type="submit" size="lg" className="w-full">
+                  Send Message
+                  <Send className="ml-2 h-4 w-4" />
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </div>
