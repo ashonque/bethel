@@ -1,5 +1,6 @@
-import { Circle, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-2">
-            <Circle className="h-6 w-6" />
+            <Image src="https://placehold.co/24x24.png" alt="logo" width={24} height={24} className="rounded-full" />
             <span className="font-headline text-lg font-bold">Bethel Youth United</span>
           </div>
           <p className="text-sm text-muted-foreground">
