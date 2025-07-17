@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col items-start text-left">
-              <h1 className="font-headline text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl">
+              <h1 className="font-headline text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">
                 For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.
               </h1>
               <p className="mt-6 max-w-xl text-lg text-muted-foreground">
