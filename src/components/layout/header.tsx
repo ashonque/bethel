@@ -38,40 +38,41 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <div className="flex items-center gap-8">
-            <Link href="/" className="flex items-center gap-2 font-bold">
-              <span className="font-headline text-lg">Bethel Youth United</span>
-            </Link>
+        <Link href="/" className="flex items-center gap-2 font-bold">
+          <span className="font-headline text-lg">Bethel Youth United</span>
+        </Link>
+
+        <div className="flex items-center gap-6">
             <nav className="hidden items-center gap-6 md:flex">
               {navLinks.map((link) => (
                 <NavLink key={link.label} {...link} />
               ))}
             </nav>
-        </div>
 
-        <div className="md:hidden">
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[240px]">
-              <div className="flex h-full flex-col">
-                 <div className="mb-8 flex items-center justify-between">
-                    <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
-                        <span className="font-headline text-lg">Bethel Youth United</span>
-                    </Link>
-                </div>
-                <nav className="flex flex-col gap-6">
-                  {navLinks.map((link) => (
-                    <NavLink key={link.href} {...link} />
-                  ))}
-                </nav>
-              </div>
-            </SheetContent>
-          </Sheet>
+            <div className="md:hidden">
+              <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Open menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[240px]">
+                  <div className="flex h-full flex-col">
+                     <div className="mb-8 flex items-center justify-between">
+                        <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
+                            <span className="font-headline text-lg">Bethel Youth United</span>
+                        </Link>
+                    </div>
+                    <nav className="flex flex-col gap-6">
+                      {navLinks.map((link) => (
+                        <NavLink key={link.href} {...link} />
+                      ))}
+                    </nav>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
         </div>
       </div>
     </header>
