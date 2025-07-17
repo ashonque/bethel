@@ -23,12 +23,12 @@ export default function Home() {
                 <Button size="lg" className="animate-pulse">Learn More</Button>
               </div>
             </div>
-            <div className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full">
+            <div className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full transition-transform duration-300 ease-in-out hover:scale-105">
               <Image 
                 src="/logo.jpg" 
                 alt="logo"
                 fill
-                className="object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                className="object-cover"
                 data-ai-hint="logo abstract"
               />
             </div>
@@ -52,7 +52,7 @@ export default function Home() {
 
       <section id="location" className="py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-6 items-center">
             <div>
               <MapPin className="h-12 w-12 text-primary" />
               <h2 className="mt-6 font-headline text-3xl font-bold tracking-tight md:text-4xl">
