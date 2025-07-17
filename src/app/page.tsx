@@ -27,7 +27,7 @@ export default function Home() {
                 alt="Payment Solution"
                 width={400}
                 height={400}
-                className="rounded-full shadow-2xl"
+                className="rounded-full shadow-2xl object-cover"
               />
             </div>
           </div>
