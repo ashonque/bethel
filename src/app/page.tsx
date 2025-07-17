@@ -74,8 +74,7 @@ export default function Home() {
               </p>
               <div className="mt-6 space-y-2 text-lg">
                 <p className="text-foreground">Bethel Youth United</p>
-                <p className="text-muted-foreground">123 Faith Street</p>
-                <p className="text-muted-foreground">Anytown, USA 12345</p>
+                <p className="text-muted-foreground">Martin-Luther-Straße 13, 51469 Bergisch Gladbach, German</p>
               </div>
             </div>
             <div className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full">
