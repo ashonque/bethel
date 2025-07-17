@@ -10,7 +10,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col items-start text-left">
               <h1 className="font-headline text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl">
-                We Provide You With A Safe And Reliable Payment Solution
+                For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.
               </h1>
               <p className="mt-6 max-w-xl text-lg text-muted-foreground">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
