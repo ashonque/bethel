@@ -1,4 +1,4 @@
-import { CircleDollarSign, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Circle, Facebook, Instagram, Twitter } from 'lucide-react';
 import Link from 'next/link';
 
 export function Footer() {
@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-2">
-            <CircleDollarSign className="h-6 w-6" />
+            <Circle className="h-6 w-6" />
             <span className="font-headline text-lg font-bold">Bethel Youth United</span>
           </div>
           <p className="text-sm text-muted-foreground">

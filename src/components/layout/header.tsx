@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, CircleDollarSign, ArrowRight } from 'lucide-react';
+import { Menu, X, Circle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -36,7 +36,7 @@ export function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2 font-bold p-2 rounded-full bg-secondary">
-              <CircleDollarSign className="h-6 w-6 text-primary" />
+              <Circle className="h-6 w-6 text-primary" />
               <span className="font-headline text-lg">Bethel Youth United</span>
             </Link>
             <nav className="hidden items-center gap-6 md:flex">
@@ -65,7 +65,7 @@ export function Header() {
               <div className="flex h-full flex-col">
                  <div className="mb-8 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
-                        <CircleDollarSign className="h-6 w-6" />
+                        <Circle className="h-6 w-6" />
                         <span className="font-headline text-lg">Bethel Youth United</span>
                     </Link>
                 </div>
