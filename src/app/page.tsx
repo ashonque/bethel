@@ -16,9 +16,9 @@ export default function Home() {
               <p className="mt-6 max-w-xl text-lg text-muted-foreground">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
               </p>
-              <div className="mt-8">
-                <p className="text-4xl font-bold">15K+</p>
-                <p className="text-muted-foreground">satisfied customers</p>
+              <div className="mt-8 flex gap-4">
+                <Button size="lg">Get Started</Button>
+                <Button size="lg" variant="outline">Learn More</Button>
               </div>
             </div>
             <div className="relative h-[400px] md:h-[600px] -mr-16">
