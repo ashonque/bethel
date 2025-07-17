@@ -97,6 +97,10 @@ export default {
         'glow': {
           '0%, 100%': { textShadow: '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary))' },
           '50%': { textShadow: '0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary))' },
+        },
+        'ripple': {
+          '0%': { transform: 'translate(-50%, -50%) scale(0.5)', opacity: '1' },
+          '100%': { transform: 'translate(-50%, -50%) scale(1.5)', opacity: '0' },
         }
       },
       animation: {
@@ -105,6 +109,7 @@ export default {
         'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'revolve': 'revolve 20s linear infinite',
         'glow': 'glow 3s ease-in-out infinite',
+        'ripple': 'ripple 1.5s ease-out forwards',
       },
     },
   },
