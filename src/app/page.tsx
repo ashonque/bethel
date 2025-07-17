@@ -78,9 +78,9 @@ export default function Home() {
                 <p className="text-muted-foreground">Anytown, USA 12345</p>
               </div>
             </div>
-            <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
+            <div className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full">
                <Image 
-                src="https://placehold.co/600x400.png" 
+                src="https://placehold.co/400x400.png" 
                 alt="Map to Bethel Youth United"
                 fill
                 className="object-cover"
