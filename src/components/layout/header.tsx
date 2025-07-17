@@ -40,7 +40,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-bold">
-          <span className="font-headline text-2xl">Bethel Youth United</span>
+          <span className="font-headline text-2xl animate-glow">Bethel Youth United</span>
         </Link>
 
         <div className="flex items-center gap-4">
@@ -67,7 +67,7 @@ export function Header() {
                   <div className="flex h-full flex-col">
                      <div className="mb-8 flex items-center justify-between">
                         <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
-                            <span className="font-headline text-2xl">Bethel Youth United</span>
+                            <span className="font-headline text-2xl animate-glow">Bethel Youth United</span>
                         </Link>
                     </div>
                     <nav className="flex flex-col gap-6">
