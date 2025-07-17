@@ -1,19 +1,19 @@
-import { Church, Facebook, Instagram, Twitter } from 'lucide-react';
+import { CircleDollarSign, Facebook, Instagram, Twitter } from 'lucide-react';
 import Link from 'next/link';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t bg-secondary">
+    <footer className="border-t border-white/10 bg-background">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-2">
-            <Church className="h-6 w-6" />
-            <span className="font-headline text-lg font-bold">BYU Connect</span>
+            <CircleDollarSign className="h-6 w-6" />
+            <span className="font-headline text-lg font-bold">Cracker</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Bethel Youth United. All Rights Reserved.
+            &copy; {currentYear} Cracker Inc. All Rights Reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="#" aria-label="Twitter">

@@ -3,17 +3,15 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Church, Menu, X } from 'lucide-react';
+import { Menu, X, CircleDollarSign, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/events', label: 'Events' },
-  { href: '/gallery', label: 'Gallery' },
-  { href: '/leadership', label: 'Leadership' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/prayer', label: 'Prayer Requests' },
+  { href: '#', label: 'About' },
+  { href: '#', label: 'Features' },
+  { href: '#', label: 'FAQ' },
 ];
 
 export function Header() {
@@ -34,17 +32,27 @@ export function Header() {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-14 items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 font-bold">
-          <Church className="h-6 w-6" />
-          <span className="font-headline text-lg">BYU Connect</span>
-        </Link>
-        <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
-            <NavLink key={link.href} {...link} />
-          ))}
-        </nav>
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/80 backdrop-blur-sm">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
+        <div className="flex items-center gap-8">
+            <Link href="/" className="flex items-center gap-2 font-bold p-2 rounded-full bg-secondary">
+              <CircleDollarSign className="h-6 w-6 text-primary" />
+              <span className="font-headline text-lg">Cracker</span>
+            </Link>
+            <nav className="hidden items-center gap-6 md:flex">
+              {navLinks.map((link) => (
+                <NavLink key={link.label} {...link} />
+              ))}
+            </nav>
+        </div>
+
+        <div className="hidden items-center gap-4 md:flex">
+           <Button variant="ghost">Log in</Button>
+           <Button>
+                Sign Up <ArrowRight className="ml-2 h-4 w-4"/>
+           </Button>
+        </div>
+
         <div className="md:hidden">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
@@ -57,8 +65,8 @@ export function Header() {
               <div className="flex h-full flex-col">
                  <div className="mb-8 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
-                        <Church className="h-6 w-6" />
-                        <span className="font-headline text-lg">BYU Connect</span>
+                        <CircleDollarSign className="h-6 w-6" />
+                        <span className="font-headline text-lg">Cracker</span>
                     </Link>
                 </div>
                 <nav className="flex flex-col gap-6">
@@ -66,6 +74,12 @@ export function Header() {
                     <NavLink key={link.href} {...link} />
                   ))}
                 </nav>
+                <div className="mt-auto flex flex-col gap-4">
+                    <Button variant="ghost">Log in</Button>
+                    <Button>
+                        Sign Up <ArrowRight className="ml-2 h-4 w-4"/>
+                    </Button>
+                </div>
               </div>
             </SheetContent>
           </Sheet>
