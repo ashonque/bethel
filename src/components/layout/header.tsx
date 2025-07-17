@@ -37,7 +37,7 @@ export function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2 font-bold">
-              <Image src="https://placehold.co/32x32.png" alt="logo" width={32} height={32} className="rounded-full" />
+              <Image src="/logo.jpg" alt="logo" width={32} height={32} className="rounded-full" />
               <span className="font-headline text-lg">Bethel Youth United</span>
             </Link>
             <nav className="hidden items-center gap-6 md:flex">
@@ -66,7 +66,7 @@ export function Header() {
               <div className="flex h-full flex-col">
                  <div className="mb-8 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
-                        <Image src="https://placehold.co/32x32.png" alt="logo" width={32} height={32} className="rounded-full" />
+                        <Image src="/logo.jpg" alt="logo" width={32} height={32} className="rounded-full" />
                         <span className="font-headline text-lg">Bethel Youth United</span>
                     </Link>
                 </div>

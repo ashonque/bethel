@@ -23,12 +23,11 @@ export default function Home() {
             </div>
             <div className="relative flex items-center justify-center">
               <Image
-                src="https://placehold.co/400x400.png"
+                src="/logo.jpg"
                 alt="Payment Solution"
                 width={400}
                 height={400}
                 className="rounded-full shadow-2xl"
-                data-ai-hint="fintech payment"
               />
             </div>
           </div>
