@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="relative overflow-hidden bg-background">
         <div className="container mx-auto px-4 py-20 md:py-32">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-1 gap-12 items-center">
             <div className="flex flex-col items-start text-left">
               <h1 className="font-headline text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl">
                 We Provide You With A Safe And Reliable Payment Solution
@@ -18,17 +18,6 @@ export default function Home() {
               <div className="mt-8 flex gap-4">
                 <Button size="lg">Get Started</Button>
                 <Button size="lg" variant="outline">Learn More</Button>
-              </div>
-            </div>
-            <div className="relative flex items-center justify-center">
-              <div className="h-[400px] w-[400px] rounded-full overflow-hidden shadow-2xl">
-                <Image
-                  src="/logo.jpg"
-                  alt="Payment Solution"
-                  width={400}
-                  height={400}
-                  className="object-cover h-full w-full"
-                />
               </div>
             </div>
           </div>
