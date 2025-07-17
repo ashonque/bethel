@@ -21,13 +21,13 @@ export default function Home() {
                 <Button size="lg" variant="outline">Learn More</Button>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <Image
-                src="https://placehold.co/600x400.png"
+                src="https://placehold.co/400x400.png"
                 alt="Payment Solution"
-                width={600}
+                width={400}
                 height={400}
-                className="rounded-xl shadow-2xl"
+                className="rounded-full shadow-2xl"
                 data-ai-hint="fintech payment"
               />
             </div>
