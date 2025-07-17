@@ -16,7 +16,6 @@ export default function Home() {
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
               </p>
               <div className="mt-8 flex gap-4">
-                <Button size="lg">Get Started</Button>
                 <Button size="lg" variant="outline">Learn More</Button>
               </div>
             </div>
