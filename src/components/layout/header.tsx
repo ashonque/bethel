@@ -37,7 +37,7 @@ export function Header() {
         <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2 font-bold p-2 rounded-full bg-secondary">
               <CircleDollarSign className="h-6 w-6 text-primary" />
-              <span className="font-headline text-lg">Cracker</span>
+              <span className="font-headline text-lg">Bethel Youth United</span>
             </Link>
             <nav className="hidden items-center gap-6 md:flex">
               {navLinks.map((link) => (
@@ -66,7 +66,7 @@ export function Header() {
                  <div className="mb-8 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
                         <CircleDollarSign className="h-6 w-6" />
-                        <span className="font-headline text-lg">Cracker</span>
+                        <span className="font-headline text-lg">Bethel Youth United</span>
                     </Link>
                 </div>
                 <nav className="flex flex-col gap-6">

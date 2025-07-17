@@ -10,10 +10,10 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-2">
             <CircleDollarSign className="h-6 w-6" />
-            <span className="font-headline text-lg font-bold">Cracker</span>
+            <span className="font-headline text-lg font-bold">Bethel Youth United</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Cracker Inc. All Rights Reserved.
+            &copy; {currentYear} Bethel Youth United Inc. All Rights Reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="#" aria-label="Twitter">
