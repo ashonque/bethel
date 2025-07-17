@@ -37,14 +37,27 @@ export default function Home() {
       </section>
 
       <section id="mission" className="py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 text-center">
-          <Church className="mx-auto h-12 w-12 text-primary" />
-          <h2 className="mt-6 font-headline text-3xl font-bold tracking-tight md:text-4xl">
-            Our Mission
-          </h2>
-          <p className="mt-6 max-w-3xl mx-auto text-lg text-muted-foreground">
-            Our mission is to foster a vibrant, faith-centered community for young people, guiding them to build a strong, personal relationship with God. We aim to create a supportive environment where they can explore their faith, develop leadership skills, and serve others with love and compassion, inspired by the teachings of Jesus Christ.
-          </p>
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
+                <Image
+                  src="https://placehold.co/600x400.png"
+                  alt="Our Mission"
+                  fill
+                  className="object-cover"
+                  data-ai-hint="youth group community"
+                />
+            </div>
+            <div className="text-left">
+              <Church className="h-12 w-12 text-primary" />
+              <h2 className="mt-6 font-headline text-3xl font-bold tracking-tight md:text-4xl">
+                Our Mission
+              </h2>
+              <p className="mt-6 max-w-3xl text-lg text-muted-foreground">
+                Our mission is to foster a vibrant, faith-centered community for young people, guiding them to build a strong, personal relationship with God. We aim to create a supportive environment where they can explore their faith, develop leadership skills, and serve others with love and compassion, inspired by the teachings of Jesus Christ.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
