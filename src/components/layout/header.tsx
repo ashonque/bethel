@@ -3,16 +3,19 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, ArrowRight } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 
 const navLinks = [
-  { href: '#', label: 'About' },
-  { href: '#', label: 'Features' },
-  { href: '#', label: 'FAQ' },
+  { href: '/', label: 'Home' },
+  { href: '/mission', label: 'Mission' },
+  { href: '/location', label: 'Location' },
+  { href: '/gallery', label: 'Gallery' },
+  { href: '/events', label: 'Events' },
+  { href: '/news', label: 'News' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export function Header() {
@@ -46,13 +49,6 @@ export function Header() {
             </nav>
         </div>
 
-        <div className="hidden items-center gap-4 md:flex">
-           <Button variant="ghost">Log in</Button>
-           <Button>
-                Sign Up <ArrowRight className="ml-2 h-4 w-4"/>
-           </Button>
-        </div>
-
         <div className="md:hidden">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
@@ -73,12 +69,6 @@ export function Header() {
                     <NavLink key={link.href} {...link} />
                   ))}
                 </nav>
-                <div className="mt-auto flex flex-col gap-4">
-                    <Button variant="ghost">Log in</Button>
-                    <Button>
-                        Sign Up <ArrowRight className="ml-2 h-4 w-4"/>
-                    </Button>
-                </div>
               </div>
             </SheetContent>
           </Sheet>
