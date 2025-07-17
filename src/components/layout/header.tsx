@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Circle, ArrowRight } from 'lucide-react';
+import { Menu, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -37,7 +37,6 @@ export function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2 font-bold">
-              <Image src="/logo.jpg" alt="logo" width={32} height={32} className="rounded-full" />
               <span className="font-headline text-lg">Bethel Youth United</span>
             </Link>
             <nav className="hidden items-center gap-6 md:flex">
@@ -66,7 +65,6 @@ export function Header() {
               <div className="flex h-full flex-col">
                  <div className="mb-8 flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsMenuOpen(false)}>
-                        <Image src="/logo.jpg" alt="logo" width={32} height={32} className="rounded-full" />
                         <span className="font-headline text-lg">Bethel Youth United</span>
                     </Link>
                 </div>
