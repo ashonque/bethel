@@ -22,13 +22,15 @@ export default function Home() {
               </div>
             </div>
             <div className="relative flex items-center justify-center">
-              <Image
-                src="/logo.jpg"
-                alt="Payment Solution"
-                width={400}
-                height={400}
-                className="rounded-full shadow-2xl object-cover"
-              />
+              <div className="h-[400px] w-[400px] rounded-full overflow-hidden shadow-2xl">
+                <Image
+                  src="/logo.jpg"
+                  alt="Payment Solution"
+                  width={400}
+                  height={400}
+                  className="object-cover h-full w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
