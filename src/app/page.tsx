@@ -27,11 +27,10 @@ export default function Home() {
               className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full transition-transform duration-300 ease-in-out hover:scale-105"
             >
               <Image 
-                src="https://placehold.co/400x400.png" 
+                src="/logo.jpg" 
                 alt="logo"
                 fill
                 className="object-cover"
-                data-ai-hint="logo abstract"
               />
             </div>
           </div>
