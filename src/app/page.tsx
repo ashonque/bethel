@@ -27,7 +27,7 @@ export default function Home() {
               className="relative mx-auto h-[400px] w-[400px] overflow-hidden rounded-full transition-transform duration-300 ease-in-out hover:scale-105"
             >
               <Image 
-                src="/logo.jpg" 
+                src="https://placehold.co/400x400.png" 
                 alt="logo"
                 fill
                 className="object-cover"
