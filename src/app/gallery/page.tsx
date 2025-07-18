@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Camera } from "lucide-react";
+import Image from "next/image";
+import { images } from "@/lib/images";
 
 export default function GalleryPage() {
   return (
@@ -15,9 +17,18 @@ export default function GalleryPage() {
       </div>
       <Card className="mt-12">
         <CardContent className="pt-6">
-            <div className="flex items-center justify-center h-64 border-2 border-dashed rounded-lg">
-                <p className="text-muted-foreground">Gallery content coming soon.</p>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {images.map((image) => (
+              <div key={image.src} className="relative aspect-square">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            ))}
+          </div>
         </CardContent>
       </Card>
     </div>
