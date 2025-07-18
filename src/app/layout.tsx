@@ -5,8 +5,8 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Cracker',
-  description: 'A Safe And Reliable Payment Solution',
+  title: 'Bethel Youth United',
+  description: 'Fostering a vibrant, faith-centered community for young people, guiding them to build a strong, personal relationship with God.',
 };
 
 export default function RootLayout({
