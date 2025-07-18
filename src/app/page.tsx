@@ -39,14 +39,24 @@ export default function Home() {
 
       <section id="mission" className="py-20 md:py-32 bg-background">
         <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <Church className="mx-auto h-12 w-12 text-primary" />
-            <h2 className="mt-6 font-headline text-3xl font-bold tracking-tight md:text-4xl">
-              Our Mission
-            </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
-              Our mission is to foster a vibrant, faith-centered community for young people, guiding them to build a strong, personal relationship with God. We aim to create a supportive environment where they can explore their faith, develop leadership skills, and serve others with love and compassion, inspired by the teachings of Jesus Christ.
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative mx-auto h-[400px] w-full max-w-[400px] overflow-hidden rounded-lg">
+              <Image
+                src="/bible.jpg"
+                alt="Bible"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col items-start text-left">
+              <Church className="h-12 w-12 text-primary" />
+              <h2 className="mt-6 font-headline text-3xl font-bold tracking-tight md:text-4xl">
+                Our Mission
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground">
+                Our mission is to foster a vibrant, faith-centered community for young people, guiding them to build a strong, personal relationship with God. We aim to create a supportive environment where they can explore their faith, develop leadership skills, and serve others with love and compassion, inspired by the teachings of Jesus Christ.
+              </p>
+            </div>
           </div>
         </div>
       </section>
